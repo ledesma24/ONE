@@ -1,0 +1,539 @@
+header{
+    margin-left: 50px;
+    width: 80vw;
+    padding-bottom: 60px;
+}
+
+.logo{    
+    padding: 1%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.anony{
+    position: absolute;
+    display: inline;
+    margin-left: 89%;
+    margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-style: normal;
+    font-size: 30px;
+    color: #0A3871;
+    padding-left: 20%;
+    margin-left: auto;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #10313142;
+}
+
+main{
+    position: relative;
+    margin: auto;
+    width: 90vw;    
+}
+.entrada{
+    display: flex;  
+}
+
+.conteiner{
+    position:relative;
+    width: 800px;
+    height: 820px;
+    margin-left: auto;
+}
+
+.inputTexto{
+    background-color: #b5caca42;
+    color: #0A3871;
+    min-width: 400px;
+    width: 758px;
+    min-height: 50px;
+    height: 695px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 42px;
+    display: inline;    
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    margin-left: auto;
+    }
+
+.inputTexto::placeholder{
+    color: darkblue;
+    font-size: 35px;
+    font-family: 'Inter';
+}
+
+#info{
+    font-size: 23px;
+    padding-bottom: 15px;
+    color: darkblue;
+}
+
+.encriptar{
+    flex: 1 1 auto;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #D8DFE8;
+    transition: .3s;
+    background-color: #0A3871;
+    color: #E9ECF8;
+    height: 67px;
+    border: 1px solid  #0A3871;
+    border-radius: 19px;
+    width: 328px;
+    min-width: 250px;
+    font-size: 19px;
+    position: absolute;
+}
+
+.encriptar:active{
+    transform: translateY(5px);
+    box-shadow: 0 3px 0;
+}
+
+.desencriptar{
+    flex: 1 1 auto;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #D8DFE8;
+    transition: .3s;
+    background-color: white;
+    color: black;
+    min-width: 250px;
+    max-width: 600px;
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 19px;
+    font-size: 19px;
+    position: absolute;
+    left: 440px;
+}
+
+.desencriptar:active{
+    transform: translateY(5px);
+    box-shadow: 0 3px 0;
+}
+
+.container2 {
+    position:relative;
+    width: 400px;
+    height: 820px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.mensaje{
+    flex: 1 1 auto;
+    background-image: url(imag/Muñeco.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-y: 270px;
+    background-position-x: 50%;
+    border-radius: 10px;  
+    border: none;
+    box-shadow:1px 1px 30px 1px #e4cadc; 
+    resize: none;
+    font-size: 37px;
+    font-style: inter;
+    color: #0A3871;  
+    text-align: center;
+    padding-top: 20px;
+    width: 400px;
+    height: 800px;
+    position: relative 
+}
+
+.mensaje2{
+    background-image: url(imag/Muñeco.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-y: 270px;
+    background-position-x: 50%;
+    border-radius: 10px;  
+    border: none;
+    box-shadow:1px 1px 30px 1px #e4cadc; 
+    resize: none;
+    font-size: 37px;
+    font-style: inter;
+    color: #0A3871;  
+    text-align: center;
+    padding-top: 20px;
+    width: 400px;
+    height: 800px;
+    position: relative 
+}
+
+.mensaje::placeholder{
+    color: darkblue;
+    font-size: 30px;
+    font-family: 'Inter';
+    text-align: center; 
+    padding-top: 60px; 
+}
+
+h2{
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    color: darkblue;
+    font-size: 25px;
+    font-family: 'Inter';
+    top: 740px;
+    font-weight: bold;
+}
+
+.copiar{
+    background-color: #0A3871;
+    color: #E9ECF8;
+    width: 328px;
+    height: 67px;
+    border: 1px solid  #0A3871;
+    border-radius: 19px;
+    font-size: 19px;
+    cursor: pointer;
+    color: #c2bebe;
+    font: 800 1.2rem 'Montserrat';
+    transition: .5s;
+    z-index: 10;
+    position: absolute;
+    top: 733px;
+    left: 40px;
+}
+
+.copiar:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+#myDiv{
+    display: none;
+}
+
+.patita{
+    position: fixed;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    color: #0A3871;
+    top: 1020px;
+}
+.patita2{
+    position: fixed;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    color: #0A3871;
+    top: 1050px;
+}
+
+/* Ajuste para tablet 768px x 1174px ----------0000000000000000000000000000000000000000000000000000OOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
+
+ @media screen and (max-width: 1100px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 90vh;
+        min-width: 500px;
+    }
+
+    main{
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 500px;
+        margin-bottom: 0px;
+    }
+
+    .conteiner{
+        margin: 0;
+        width: 90vw;
+        height: 500px;
+        justify-content: center;
+    }
+    header{
+        margin: 0%;
+        padding-bottom: 0px;
+    }
+
+    .logo{
+        display: block;
+        margin-left: 20px;
+    }
+    h1, .anony{
+        display: none;
+    }
+    .entrada{
+        flex-direction: column;
+        }
+
+    .inputTexto{
+        min-width: 300px;
+        font-size: 1.8rem;
+        width: 87vw;
+        height: 350px
+    }
+    .inputTexto::placeholder{
+        color: darkblue;
+        font-size: 1.5rem;
+        font-family: 'Inter';
+    }
+
+    #info{
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .encriptar{
+        width: 45%;
+        min-width: 150px;
+        margin-left: 0%;
+        height: 55px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+    .desencriptar{
+        left: 0px;
+        margin-left: 52%;
+        width: 45%;
+        min-width: 150px;
+        text-align: center;
+        margin-right: 20px;
+        height: 55px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+    div.container2{
+        margin: 0px;
+        height: 400px;
+        width: 87vw;   
+    }
+
+    .mensaje{
+        height: 124px;
+        width: 87vw;
+        padding: 0; 
+        background-image: none;   
+        min-width: 300px
+        }
+
+    .mensaje2{
+        flex: 1 1 auto;
+        border-radius: 10px;  
+        border: none;
+        box-shadow:1px 1px 30px 1px #e4cadc; 
+        resize: none;
+        font-size: 1.8rem;
+        font-style: inter;
+        color: #0A3871;  
+        text-align: center;
+        padding-top: 25px;
+        height: 370px;
+        width: 87vw;
+        position: relative;
+    }
+
+    .mensaje::placeholder{ 
+        padding-top: 25px; 
+        font-size: 1.4rem;
+    }
+
+    h2{
+        top: 80px;
+        left: 0px;
+        margin-left: 54%;
+        transform: translateX(-50%);
+        font-size: 1.2rem;
+    }
+
+    .copiar{
+        height:55px;
+        margin-left: 45%;
+        transform: translateX(-50%);
+        top: 85%;      
+        width: 60%        
+    }
+    .patita{
+        text-align: center;
+        height: 40px;
+        width: 100vw;
+        color: #0A3871;
+        top: 800px;
+        font-size: 0.8rem;
+    }
+
+    .patita2{
+        
+        text-align: center;
+        height: 10px;
+        width: 100%;
+        color: #0A3871;
+        top: 1020px;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Ajuste para cel 360px 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+ @media screen and (max-width: 360px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-left: 15px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .anony{
+        display: block;
+        margin: 0;
+        position: relative;
+        top: 10px;
+        left: 0px;
+    }
+
+    .entrada{
+        display: flex;
+        max-width: 360px;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        max-height: 770px;
+    }
+
+    .conteiner{
+        top: 0px;
+        height: 380px;
+    }
+
+    .inputTexto{
+        font-size: 1.5rem;
+        min-width: 100px;
+        width: 99%;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        height: 150px
+    }
+
+    .inputTexto::placeholder{
+        color: darkblue;
+        font-size: 1.4rem;
+        font-family: 'Inter';
+    }
+    
+    #info{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        font-size: .9rem;
+        margin-left: 5px;
+    }
+
+    .encriptar{
+        display: block;
+        width: 99%;
+        margin-left: 1px;
+        margin-right: auto;
+        height: 50px;
+        margin-bottom: 0px;
+    }
+
+    .desencriptar{
+        display: block;
+        width: 99%;
+        margin-left: 1px;
+        top: 267px;
+        height: 50px;
+    }
+
+    .container2{
+        height: 100px;
+        width: 100%;
+    }
+
+    .mensaje{
+        height: 110px;
+        width: 99%;
+        padding: 0; 
+        background-image: none;   
+        min-width: 100px;
+        margin-left: 5px;
+        }
+
+    .mensaje3{
+        flex: 1 1 auto;
+        border-radius: 10px;  
+        border: none;
+        box-shadow:1px 1px 30px 1px #e4cadc; 
+        resize: none;
+        font-size: 1.4rem;
+        font-style: inter;
+        color: #0A3871;  
+        text-align: center;
+        padding-top: 5px;
+        height: 200px;
+        display: block;
+        min-width: 100px;
+        width: 100%; 
+        margin-left: 2px;
+    }
+
+    .mensaje::placeholder{ 
+        padding-top: 25px; 
+        font-size: 1.3rem;
+    }
+    
+    h2{
+        display: none;
+    }
+
+    .patita{
+        text-align: center;
+        height: 40px;
+        width: 90vw;
+        color: #0A3871;
+        top: 600px;
+        font-size: 0.7rem;
+    }
+
+    .patita3{
+        height: 10px;
+        width: 90%;
+        color: #0A3871;
+        top: 670px;
+        font-size: 0.8rem;
+        position: fixed;
+        text-align: center;
+    }
+
+    .copiar{
+        border-radius: 9px;
+        height:38px;
+        left: 7%;
+        right: 0px;
+        top: 168px;      
+        width: 90%            
+    }
+
+}

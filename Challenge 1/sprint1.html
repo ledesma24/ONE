@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="stylesprint1.css">    
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="imag/Vector.png" alt="Logo de Alura">
+        <img class="anony" src="imag/anony.png" alt="Logo de anonymous">
+        <h1>[ENCRIPTADOR DE TEXTO]</h1>
+    </header>
+
+    <main>
+        <section class="entrada">
+            <div class="conteiner">
+                <textarea class="inputTexto" autofocus cols="80" rows="20" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="info"> 🛈 Introduzca solamente minúsculas sin acentos.</p>
+                <div class="botones">
+                    <div class="encri">
+                        <button class="encriptar" onclick = "btnEncriptar()">Encriptar</button>
+                    </div>
+                    <div class="desencri">
+                        <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="container2">
+                <textarea id="mensa" class="mensaje"  readonly="readonly" placeholder="Encripte o desencripte el mensaje que deseé" ></textarea>
+                <button id="myDiv" class="copiar" onclick="copion()">Copiar</button>
+                <div id="nada">
+                    <h2>Sin mensaje aún</h2>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+    </main>
+    <script src="scripsprint.js"></script>
+
+    <footer>
+        <p id="patita1" class="patita">&copy Emmanuel Ledesma</p>
+    </footer>
+    
+</body>
+</html>
+
+
